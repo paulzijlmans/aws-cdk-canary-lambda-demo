@@ -5,7 +5,12 @@
 
     <groupId>com.myorg</groupId>
     <artifactId>aws-cdk-canary-lambda-demo</artifactId>
+    <packaging>pom</packaging>
     <version>0.1</version>
+    <modules>
+        <module>lambda-application</module>
+        <module>lambda-resource-stack</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

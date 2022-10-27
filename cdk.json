@@ -1,5 +1,5 @@
 {
-  "app": "mvn -e -q compile exec:java",
+  "app": "mvn exec:java -pl lambda-resource-stack -Dexec.mainClass=com.myorg.AwsCdkCanaryLambdaDemoApp",
   "watch": {
     "include": [
       "**"
