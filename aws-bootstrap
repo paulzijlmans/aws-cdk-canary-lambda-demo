@@ -1,0 +1,5 @@
+#!/bin/bash
+echo Bootstrapping...
+source .aws-config
+cdk bootstrap aws://"$AWS_ACCOUNT_NUMBER"/"$AWS_DEFAULT_REGION"
+echo Done!
