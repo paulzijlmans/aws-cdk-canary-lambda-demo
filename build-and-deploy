@@ -1,0 +1,6 @@
+#!/bin/bash
+echo Building...
+mvn install
+echo Deploying...
+cdk deploy
+echo Done!

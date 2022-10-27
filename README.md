@@ -8,13 +8,16 @@ It is a [Maven](https://maven.apache.org/) based project, so you can open this p
 
 ## Useful commands
 
- * `aws-configure`     run aws config based on input in file .aws-config
- * `bootstrap`         bootstrap AWS account
- * `mvn package`       compile and run tests
- * `cdk ls`            list all stacks in the app
- * `cdk synth`         emits the synthesized CloudFormation template
- * `cdk deploy`        deploy this stack to your default AWS account/region
- * `cdk diff`          compare deployed stack with current state
- * `cdk docs`          open CDK documentation
+ * `aws-configure`       run aws config based on input in file .aws-config (see .aws-config.template)
+ * `bootstrap`           bootstrap AWS account based on input in file .aws-config (see .aws-config.template)
+ * `build-and-deploy`    build app and deploy to AWS
+ * `test-lambda-output`  continuously invoke the Lambda function and show the output
+ * `remove-resources`    remove all resources deployed via the stack
+ * `mvn package`         compile and run tests
+ * `cdk ls`              list all stacks in the app
+ * `cdk synth`           emits the synthesized CloudFormation template
+ * `cdk deploy`          deploy this stack to your default AWS account/region
+ * `cdk diff`            compare deployed stack with current state
+ * `cdk docs`            open CDK documentation
 
 Enjoy!

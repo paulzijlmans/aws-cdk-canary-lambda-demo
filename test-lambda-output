@@ -1,0 +1,5 @@
+#!/bin/bash
+echo Testing Lambda output...
+while true; do aws lambda invoke --function-name myFunction:prod out --log-type Tail \
+--query 'LogResult' --output text | base64 -d;
+done
