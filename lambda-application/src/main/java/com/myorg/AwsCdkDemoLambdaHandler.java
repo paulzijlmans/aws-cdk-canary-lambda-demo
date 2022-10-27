@@ -11,8 +11,8 @@ public class AwsCdkDemoLambdaHandler implements RequestHandler<Object, String> {
 
     @Override
     public String handleRequest(Object o, Context context) {
-        System.out.println("Alpha version in production");
-        int number = random.nextInt(6);
+        System.out.println("Beta version in production");
+        int number = random.nextInt(10);
         if (number % 2 == 0) {
             System.out.println(number + " is even");
         } else
